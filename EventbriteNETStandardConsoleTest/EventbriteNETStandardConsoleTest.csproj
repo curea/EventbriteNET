@@ -2,6 +2,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EventbriteNETStandard\EventbriteNETStandard.csproj" />
+    <ProjectReference Include="..\..\snowfroc\snowfroc.data\snowfroc.data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="30.0.1" />
   </ItemGroup>
 
   <PropertyGroup>

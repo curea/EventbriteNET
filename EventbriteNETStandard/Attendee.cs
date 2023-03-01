@@ -94,6 +94,15 @@ namespace EventbriteNET
         public string changed { get; set; }
     }
 
+    public class PromotionalCode
+    {
+        public string id { get; set; }
+        public string promotion { get; set; }
+        public string promotion_type { get; set; }
+        public string code { get; set; }
+        public string percent_off { get; set; }
+    }
+
     public class Attendee : EventbriteObject
     {
         public object team { get; set; }
@@ -114,6 +123,7 @@ namespace EventbriteNET
         public string event_id { get; set; }
         public string order_id { get; set; }
         public string ticket_class_id { get; set; }
+        public PromotionalCode promotional_code { get; set; }
     }
 
     public class EventAttendees : EventbriteObject

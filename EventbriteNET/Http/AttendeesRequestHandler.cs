@@ -27,7 +27,7 @@ namespace EventbriteNET.Http
             if (Context.EventId <= 0)
                 throw new ArgumentException("EventId not set in Context", "entity");
 
-            var request = new RestRequest("events/{id}/attendees/");
+            var request = new RestRequest("events/{id}/attendees/?expand=promotional_code");
             request.AddUrlSegment("id", Context.EventId.ToString());
             request.AddQueryParameter("token", Context.Token);
             if (Context.Page > 1)
@@ -47,7 +47,7 @@ namespace EventbriteNET.Http
             if (Context.EventId <= 0)
                 throw new ArgumentException("EventId not set in Context", "entity");
 
-            var request = new RestRequest("events/{id}/attendees/{attendee_id}/");
+            var request = new RestRequest("events/{id}/attendees/{attendee_id}/?expand=promotional_code");
             request.AddUrlSegment("id", Context.EventId.ToString());
             request.AddUrlSegment("attendee_id", id.ToString());
             request.AddQueryParameter("token", Context.Token);
