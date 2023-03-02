@@ -4,7 +4,7 @@ using EventbriteNET;
 //using EventbriteNETStandardConsoleTest.Models;
 using snowfroc.data.Models;
 
-var eventbriteNET = new EventbriteContext("SARD7TBUL5LEVBBZNGMM");
+var eventbriteNET = new EventbriteContext("XXXXXXXXXXXXXX");
 
 /*
 var users = eventbriteNET.Get<User>();
